@@ -1,8 +1,17 @@
+@font-face {
+  font-family: 'Exo'; /* Choose a name for your font */
+  src: url('Exo2-SemiBold.ttf') format('truetype'); 
+}
+
+
 body {
+  
+  background: linear-gradient(135deg, #0d172e,#250c27) no-repeat center center fixed;
+  background-size: cover;
+  
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Exo';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +20,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+i{
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a0466; 
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #380672; /* Scrollbar thumb color on hover */
+}
+
+

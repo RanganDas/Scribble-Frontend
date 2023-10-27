@@ -1,0 +1,29 @@
+/* Login.css */
+.form-control::placeholder {
+    color: rgb(184, 184, 184); /* Change the placeholder text color to white */
+  }
+ 
+  .tag {
+    font-size: 10px;
+    display: inline-block;
+    background-color: #190031; /* Background color of the squared box */
+    color: #fff; /* Text color inside the squared box */
+    padding: 5px 10px; /* Adjust padding as needed */
+    margin: 0 5px; /* Add spacing between tags */
+    border-radius: 20px; /* Rounded corners to create squared box effect */
+  }
+  
+  .no-scrollbar {
+    /* Hide the scrollbar, but allow scrolling */
+    overflow: hidden;
+    /* Webkit-based browsers (Chrome, Safari) scrollbar styles */
+    scrollbar-width: none; /* Firefox scrollbar width */
+    -ms-overflow-style: none; /* IE scrollbar style */
+    &::-webkit-scrollbar {
+      width: 0.5em; /* Set scrollbar width */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent; /* Set scrollbar thumb color */
+    }
+  }
+  
