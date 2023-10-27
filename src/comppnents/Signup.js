@@ -53,6 +53,7 @@ const Signup = (props) => {
               width: "90%", // Use a percentage for responsiveness
               margin: "0 auto", // Center the form horizontally
               boxSizing: "border-box", // Ensure padding and border are included in the width
+              marginBottom: "50px"
             }}
           >
             <div className="card-body">
