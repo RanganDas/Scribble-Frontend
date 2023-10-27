@@ -11,13 +11,13 @@ function Notes(props) {
   const { notes, getNotes, editNote, users, getUser } = context;
 
   useEffect(() => {
-    console.log("Checking authentication status");
+    //console.log("Checking authentication status");
     if (localStorage.getItem("token")) {
-      console.log("User is authenticated");
+      //console.log("User is authenticated");
       getUser();
       getNotes();
     } else {
-      console.log("Redirecting to login");
+      //console.log("Redirecting to login");
       navigate("/login");
     }
   }, []);

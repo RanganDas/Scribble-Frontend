@@ -23,12 +23,12 @@ const NoteState = (props) => {
     });
 
     if (response.status === 401) {
-      console.log("User is not authenticated");
+      //console.log("User is not authenticated");
       return;
     }
 
     const json = await response.json();
-    console.log("API Response:", json); // Log the response
+    //console.log("API Response:", json); // Log the response
     setNotes(json);
   };
 
@@ -44,12 +44,12 @@ const NoteState = (props) => {
     });
 
     if (response.status === 401) {
-      console.log("User is not authenticated");
+      //console.log("User is not authenticated");
       return;
     }
 
     const json = await response.json();
-    console.log("User data:", json); // Log the response
+    //console.log("User data:", json); // Log the response
     setUsers(json);
   };
 
@@ -65,12 +65,12 @@ const NoteState = (props) => {
       body: JSON.stringify({ title, description, tag }),
     });
     if (response.status === 401) {
-      console.log("User is not authenticated");
+      //console.log("User is not authenticated");
       return;
     }
 
     const note = await response.json();
-    console.log("API Response:", note);
+    //console.log("API Response:", note);
     setNotes(notes.concat(note));
   };
 
